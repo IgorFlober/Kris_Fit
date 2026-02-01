@@ -27,7 +27,8 @@ except ImportError as e:
     sys.exit(1)
 
 # Токен бота
-BOT_TOKEN = "8025175693:AAH-z4bVN8ngE_Pv7i5-3890K_SZ8_nBB3g"
+import os
+BOT_TOKEN = os.getenv('BOT_TOKEN')
 
 class ForeverBot:
     def __init__(self):
